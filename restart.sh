@@ -1,6 +1,9 @@
 #!/bin/bash
 
 # Run this as root!
+# This script exists because we are lazy programmers
+# and can't be bothered to individually restart services
+# so we spend 10x the time to automate said process
 
 usage() {
     echo

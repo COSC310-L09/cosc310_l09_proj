@@ -1,6 +1,7 @@
 # TODO: Fill the paths properly
 # I have this pulled from a personal website I was running, this script will not work at all, but it doesn't need to rn
 # I'll leave this for future Sam, fuck that guy
+# I'll also add better notes once its properly written, so ya'll can ignore this file
 
 [Unit]
 Description=uWGSI instance to serve my home server webpage
