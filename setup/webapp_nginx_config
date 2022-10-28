@@ -1,0 +1,18 @@
+# webapp portion
+server {
+    # if you have a domain
+    # server_name your_domain www.your_domain;
+
+    # else
+    # IP address
+
+    location / {
+        # specifies some general uWSGI parameters
+        include uwsgi_params;
+
+        # TODO: Fill this path properly
+        # wsgi_pass unix:/path/to/.sock;
+    }
+
+
+}

@@ -1,0 +1,5 @@
+Flask
+uwsgi
+psycopg2
+wheel
+psycopg2-binary

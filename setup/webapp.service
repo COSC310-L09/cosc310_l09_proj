@@ -1,0 +1,17 @@
+# TODO: Fill the paths properly
+# I have this pulled from a personal website I was running, this script will not work at all, but it doesn't need to rn
+# I'll leave this for future Sam, fuck that guy
+
+[Unit]
+Description=uWGSI instance to serve my home server webpage
+After=network.target
+
+[Service]
+User=swalt
+Group=www-data
+WorkingDirectory=/home/swalt/git/home_webapp
+Environment="PATH=/home/swalt/git/home_webapp/venv/bin"
+ExecStart=/home/swalt/git/home_webapp/venv/bin/uwsgi --ini home_webapp.ini
+
+[Install]
+WantedBy=multi-user.target
