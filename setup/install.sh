@@ -15,3 +15,5 @@ echo 'planting nginx config files'
 # echo 'planting service file'
 
 # cp /path/to/.service /etc/systemd/system/
+
+# TODO: also gonna have to make portion in here to create a venv with the right libraries
