@@ -15,6 +15,7 @@ server {
         # specifies some general uWSGI parameters
         include uwsgi_params;
 
+        # the location of the sock file, 'where to look'
         uwsgi_pass unix:/home/swalt/git/cosc310_l09_proj/webapp.sock;
     }
 

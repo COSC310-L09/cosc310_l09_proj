@@ -1,4 +1,4 @@
-# TODO: Finalize this
+# TODO: Finalize this, also not super important so this may never get done
 
 # planting configs
 

@@ -1,17 +1,22 @@
 # TODO: Fill the paths properly
-# I have this pulled from a personal website I was running, this script will not work at all, but it doesn't need to rn
-# I'll leave this for future Sam, fuck that guy
-# I'll also add better notes once its properly written, so ya'll can ignore this file
 
+# this section is just meta data, not really important
 [Unit]
-Description=uWGSI instance to serve my home server webpage
+Description=uWGSI instance to serve a surveilance GUI
 After=network.target
 
 [Service]
+# what user will be running this instance, this is mostly for file permission purposes
 User=swalt
+# ditto to above
 Group=www-data
+# this sets the base path to where the project is located
 WorkingDirectory=/home/swalt/git/cosc310_l09_proj/
+# this is the location of the virtual environment
 Environment="PATH=/home/swalt/git/cosc310_l09_proj/.venv/bin"
+# this is what we want the service file to start and run once its activated
+# the webapp.ini file has more verbose notes, but tl;dr it creates a .sock file
+# with the GUI for the nginx proxy to serve on an http client
 ExecStart=/home/swalt/git/cosc310_l09_proj/.venv/bin/uwsgi --ini webapp.ini
 
 [Install]
