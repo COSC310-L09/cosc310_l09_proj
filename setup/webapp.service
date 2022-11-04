@@ -9,9 +9,9 @@ After=network.target
 [Service]
 User=swalt
 Group=www-data
-WorkingDirectory=/home/swalt/git/home_webapp
-Environment="PATH=/home/swalt/git/home_webapp/venv/bin"
-ExecStart=/home/swalt/git/home_webapp/venv/bin/uwsgi --ini home_webapp.ini
+WorkingDirectory=/home/swalt/git/cosc310_l09_proj/
+Environment="PATH=/home/swalt/git/cosc310_l09_proj/.venv/bin"
+ExecStart=/home/swalt/git/cosc310_l09_proj/.venv/bin/uwsgi --ini webapp.ini
 
 [Install]
 WantedBy=multi-user.target

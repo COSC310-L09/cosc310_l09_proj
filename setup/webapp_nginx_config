@@ -10,8 +10,7 @@ server {
         # specifies some general uWSGI parameters
         include uwsgi_params;
 
-        # TODO: Fill this path properly
-        # wsgi_pass unix:/path/to/.sock;
+        wsgi_pass unix:/home/swalt/git/cosc310_l09_proj/webapp.sock;
     }
 
 
