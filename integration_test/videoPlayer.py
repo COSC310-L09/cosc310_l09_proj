@@ -55,8 +55,8 @@ class Window(QWidget):
     self.mediaPlayer.durationChanged.connect(self.durationChange)
     
   def openFile(self):
-    # filename, _ = QFileDialog.getOpenFileName(self, "Open Video")
-    filename = "Ghost_Doll_3_Pack.mp4"
+    filename, _ = QFileDialog.getOpenFileName(self, "Open Video")
+    #filename = "Ghost_Doll_3_Pack.mp4" Needs absolute dir
     if filename != '':
       self.mediaPlayer.setMedia(QMediaContent(QUrl.fromLocalFile(filename)))
       self.playBtn.setEnabled(True)
