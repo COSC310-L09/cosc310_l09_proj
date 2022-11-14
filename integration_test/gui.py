@@ -99,9 +99,15 @@ class Worker(QThread):
     
     
 if __name__ == "__main__":
-  App = QApplication(sys.argv)
-  Root = MainWindow()
-  Root.show()
-  sys.exit(App.exec())
+  app = QApplication(sys.argv)
+  style = """
+    QWidget{
+      background: #262D37
+    }
+  """
+  app.setStyleSheet(style)
+  root = MainWindow()
+  root.show() 
+  sys.exit(app.exec())
   
   

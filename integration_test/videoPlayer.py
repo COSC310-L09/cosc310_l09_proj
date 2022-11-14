@@ -89,7 +89,19 @@ class Window(QWidget):
   def setPosition(self, position):
     self.mediaPlayer.setPosition(position)
   
-app = QApplication(sys.argv)
-window = Window()
-window.show()
-sys.exit(app.exec_())
+# app = QApplication(sys.argv)
+# window = Window()
+# window.show()
+# sys.exit(app.exec_())
+
+if __name__ == "__main__":
+  app = QApplication(sys.argv)
+  style = """
+    QWidget{
+      background: #262D37
+    }
+  """
+  app.setStyleSheet(style)
+  root = Window()
+  root.show() 
+  sys.exit(app.exec())
