@@ -48,12 +48,16 @@
   .video-summary {
     padding: 15px 0;
     gap: 10px;
+    cursor: pointer;
   
     .video-image {
       width: 50%;
       max-width: 126px;
       background-color: var(--medium-grey);
       border-radius: 5px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
     }
     .container {
       gap: 5px

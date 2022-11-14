@@ -49,7 +49,7 @@ export default function Sidebar() {
                       <div className="hidden text-1 off-white ml-1 medium">Collapse</div>
                     </div>
                   </li>
-                  <SidebarItem 
+                  {/* <SidebarItem 
                     dest={"/settings"}
                     icon={<BsGear className="icon icon-size-1" color="var(--off-white)" strokeWidth={strokeWidth}/>}
                     title={"Settings"}
@@ -58,7 +58,7 @@ export default function Sidebar() {
                     dest={"/user"}
                     icon={<BiUser className="icon icon-size-1" color="var(--off-white)" strokeWidth={strokeWidth}/>}
                     title={"User Profile"}
-                  />
+                  /> */}
                 </ul>
               </div>
             </aside>

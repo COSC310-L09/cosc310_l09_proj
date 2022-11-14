@@ -1,13 +1,24 @@
+import { useRef } from "react"
 
 
 
 export default function LiveFeed() {
+  const videoRef = useRef(null)
+
+  if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia){
+    navigator.mediaDevices.getUserMedia({video: true}).then(stream => {
+      console.log(stream)
+      videoRef.current.srcObject = stream
+      videoRef.current.play()
+    })
+  }
+
   return (
-    <div className="container fill">
+    <div className="container gap-20 space-between fill">
       <div className="main video-player-section">
         <div className="video-player">
-          <video width="750" height="500" controls >
-            <source src="demo-video.mp4" type="video/mp4"/>
+          <video ref={videoRef} className="video" autoPlay>
+            Your browser does not support the video tag.
           </video>
         </div>
       </div>
