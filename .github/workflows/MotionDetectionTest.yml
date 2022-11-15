@@ -3,7 +3,7 @@
 
 name: Python application test for the motion detection script
 
-on: [push
+on: [push]
 
 jobs:
   build:
