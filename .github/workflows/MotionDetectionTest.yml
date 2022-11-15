@@ -3,14 +3,7 @@
 
 name: Python application test for the motion detection script
 
-on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
-
-permissions:
-  contents: read
+on: [push]
 
 jobs:
   build:
