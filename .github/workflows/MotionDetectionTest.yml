@@ -21,8 +21,9 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
           python3 -m pip install opencv-python
+          pip install pandas
       - name: Test with pytest
         run: |
           pip install pytest
           pip install pytest-cov
-          pytest MotionDetection.py --doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html
+          py.test MotionDetection.py -s

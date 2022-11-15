@@ -8,7 +8,7 @@ export default function VideoPlayer({src}) {
   const videoRef = useRef(null)
 
   return (
-    <div className="main video-player-section">
+    <div data-testid="player" className="main video-player-section">
       <div className="video-player">
         <video ref={videoRef} className="video" controls
           src={src}
