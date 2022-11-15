@@ -5,19 +5,13 @@
 # the world wide web
 
 server {
-    # if you have a domain
-    # server_name your_domain www.your_domain;
 
-    # else
-    # IP address
+        root /home/swalt/git/cosc310_l09_proj/WebApp/build;
+        index index.html index.htm index.nginx-debian.html;
 
-    location / {
-        # specifies some general uWSGI parameters
-        include uwsgi_params;
+        server_name wss-cosc310.ddns.net;
 
-        # the location of the sock file, 'where to look'
-        uwsgi_pass unix:/home/swalt/git/cosc310_l09_proj/webapp.sock;
-    }
-
-
+        location / {
+                try_files $uri $uri/ =404;
+        }
 }
