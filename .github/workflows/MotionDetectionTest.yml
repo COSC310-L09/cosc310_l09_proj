@@ -26,4 +26,4 @@ jobs:
         run: |
           pip install pytest
           pip install pytest-cov
-          python -m pytest --import-mode=append tests/
+          python -m pytest 
