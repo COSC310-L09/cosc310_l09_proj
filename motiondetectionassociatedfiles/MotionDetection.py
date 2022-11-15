@@ -76,7 +76,7 @@ print(times)
 
 # writes the times down into a list
 for i in range(0, len(times), 2):
-    df = df.append({"Start": times[i],"End": times[i+1]}, ignore_index=True)
+    df = df.append({"Start": times[i],"End": times[i]}, ignore_index=True)
 
 # prints the list to a csv file
 df.to_csv("Times.csv")
