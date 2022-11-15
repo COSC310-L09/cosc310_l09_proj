@@ -2,3 +2,4 @@ wheel
 Flask
 uwsgi
 psycopg2-binary
+opencv-python 
