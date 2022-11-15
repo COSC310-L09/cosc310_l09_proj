@@ -48,9 +48,8 @@ export default function DBStorage() {
     setVideoSrc(src)
   }
 
-  
   return (
-    <div className="container gap-20 space-between fill">
+    <div data-testid="db-storage" className="container gap-20 space-between fill">
       <VideoPlaylist changeVideo={handleChangeVideo} videoData={videoData}/>
       <VideoPlayer src={videoSrc}/>
     </div>

@@ -1,10 +1,8 @@
-import { useEffect, useState } from "react"
-
 
 export default function VideoPlaylist({changeVideo, videoData}) {
 
   return (
-    <div className="main video-playlist column">
+    <div data-testid="playlist" className="main video-playlist column">
       <div className="date-range">
         <input type="date"/>
         <div className="dash"></div>
@@ -13,8 +11,8 @@ export default function VideoPlaylist({changeVideo, videoData}) {
       <div className="horizontal-divider"></div>
       <div className="container column y-scrollable">
         {
-          videoData.map((data) => {
-            return <div>
+          videoData.map((data, index) => {
+            return <div key={index}>
               <div className="container video-summary" onClick={() => changeVideo(data.src)}>
               <div className="video-image" style={{backgroundImage: data.thumbnail}}></div>
               <div className="container column">

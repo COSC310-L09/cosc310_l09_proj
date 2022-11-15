@@ -14,7 +14,7 @@ export default function LiveFeed() {
   }
 
   return (
-    <div className="container gap-20 space-between fill">
+    <div data-testid="live-feed" className="container gap-20 space-between fill">
       <div className="main video-player-section">
         <div className="video-player">
           <video ref={videoRef} className="video" autoPlay>
