@@ -14,7 +14,7 @@ export default function VideoPlaylist({changeVideo, videoData}) {
           videoData.map((data, index) => {
             return <div key={index}>
               <div className="container video-summary" onClick={() => changeVideo(data.src)}>
-              <div className="video-image" style={{backgroundImage: data.thumbnail}}></div>
+              <div className="video-image" style={{backgroundImage: `url(${data.thumbnail})`}}></div>
               <div className="container column">
                 <p>{data.date}</p>
                 <p>{data.time}</p>
