@@ -12,12 +12,10 @@ Given the very broad scope of video anomaly detection, choosing to focus on one 
 1. Ability to **remotely** access the video footage
 1. Web Application **hosted** on online servers
 1. Video **enhancement**  capabilities ( Night Vision, HD Resolution, etc)
-1. Object & Facial **Detection**
+1. Object **Detection**
 1. Facial **Recognition**
-1. Ability to capture **greater field of view** using a wide-lens camera
 1. **Backup storage** using a standard database
-1. Weather **Resistance**
-1. **Optimized** database support
+1. **Optimized** database support using blob storage
 
 # Important Links
 - [Asana](https://app.asana.com/0/1203173191116974/1203173191116989)
