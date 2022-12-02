@@ -20,3 +20,5 @@ Given the very broad scope of video anomaly detection, choosing to focus on one 
 # Important Links
 - [Asana](https://app.asana.com/0/1203173191116974/1203173191116989)
 - [Notion](https://www.notion.so/COSC-310-Assignment-2-a1231444458d490299fdbc667d925fc4)
+
+TEST

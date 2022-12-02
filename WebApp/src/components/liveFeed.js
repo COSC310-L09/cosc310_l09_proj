@@ -7,7 +7,6 @@ export default function LiveFeed() {
 
   if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia){
     navigator.mediaDevices.getUserMedia({video: true}).then(stream => {
-      console.log(stream)
       videoRef.current.srcObject = stream
       videoRef.current.play()
     })
@@ -16,7 +15,7 @@ export default function LiveFeed() {
   return (
     <div data-testid="live-feed" className="container gap-20 space-between fill">
       <div className="main video-player-section">
-        <div className="video-player">
+        <div className="video-player"> 
           <video ref={videoRef} className="video" autoPlay>
             Your browser does not support the video tag.
           </video>
